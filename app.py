@@ -10,7 +10,7 @@ DATASETS = {
     "Lukas": "dataset/label_Lukas.csv",
     "Jose": "dataset/label_Jose.csv",
     "Iury": "dataset/label_Iury.csv",
-    "Jesisca": "dataset/label_Jessica.csv",
+    "Jessica": "dataset/label_Jessica.csv",
 }
 
 # Streamlit UI

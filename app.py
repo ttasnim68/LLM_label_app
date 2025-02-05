@@ -2,87 +2,93 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-import numpy as np  # Import NumPy to handle NaN values
+import numpy as np
 
-# CSV File Path
-CSV_FILE = "label_Charles.csv"
+# Define available datasets
+DATASETS = {
+    "Charles": "dataset/label_Charles.csv",
+    "Lukas": "dataset/label_Lukas.csv",
+    "Jose": "dataset/label_Jose.csv",
+    "Iury": "dataset/label_Iury.csv",
+    "Jesisca": "dataset/label_Jessica.csv",
+}
 
-# Function to Load CSV Data
+# Streamlit UI
+st.title("Issue Report Labeling System")
+
+# User Selection Dropdown
+selected_user = st.selectbox("Select User:", list(DATASETS.keys()))
+
+# Load the selected dataset
+CSV_FILE = DATASETS[selected_user]
+
 @st.cache_data
-def load_data():
-    if not os.path.exists(CSV_FILE):
+def load_data(csv_file):
+    if not os.path.exists(csv_file):
+        st.error(f"⚠️ File {csv_file} not found!")
         return pd.DataFrame(columns=["body", "label", "reason"])
 
-    df = pd.read_csv(CSV_FILE)
+    df = pd.read_csv(csv_file)
 
     # Extract "html_url" safely from JSON in "body" column
     def extract_url(json_str):
         try:
-            data = json.loads(json_str)  # Use json.loads instead of ast.literal_eval
+            data = json.loads(json_str)  
             return data.get("html_url", "")
         except (json.JSONDecodeError, TypeError):
-            return ""  # Return empty if JSON is invalid
+            return ""  
 
     df["html_url"] = df["body"].apply(extract_url)
 
     # Ensure label and reason columns exist
-    if "label" not in df.columns:
-        df["label"] = None  # Empty for checkboxes
-    if "reason" not in df.columns:
-        df["reason"] = ""  # Empty for text input
-
-    # Fix: Replace NaN in "reason" with an empty string
-    df["reason"] = df["reason"].fillna("")
+    df["label"] = df.get("label", np.nan)
+    df["reason"] = df.get("reason", "").fillna("")
 
     return df
 
-# Load the data
-df = load_data()
+df = load_data(CSV_FILE)
 
-# Initialize session state for checkboxes & text areas
+# Initialize session state
 if "label" not in st.session_state:
     st.session_state["label"] = {i: df.at[i, "label"] for i in df.index}
 if "reason" not in st.session_state:
-    st.session_state["reason"] = {i: df.at[i, "reason"] if pd.notna(df.at[i, "reason"]) else "" for i in df.index}
+    st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
 
 # Function to Save Data
 def save_data():
     for index in df.index[:110]:  # Save only first 110 rows
-        df.at[index, "label"] = st.session_state["label"][index]
-        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan  # Save empty as NaN
+        classification_value = st.session_state["label"].get(index)
+        df.at[index, "label"] = classification_value if classification_value is not None else np.nan
+        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
 
     df.to_csv(CSV_FILE, index=False)
-    st.success("Data saved successfully!")  # Show success message
-
-# Streamlit UI
-st.title("Issue Report Label")
-st.write(f"Displaying {min(110, len(df))} records.")
+    st.success("✅ Data saved successfully!")
 
 # Display Table with Editable Fields
+st.write(f"📊 Displaying Data for: **{selected_user}**")
+
 for index in df.index[:110]:  # Show first 110 rows
     col1, col2, col3, col4 = st.columns([1, 3, 2, 3])
 
     with col1:
-        st.write(index + 1)  # Serial Number
+        st.write(index + 1)
 
     with col2:
-        if df.at[index, "html_url"]:  # Ensure the link is not empty
-            st.markdown(f"[Issue Link]({df.at[index, 'html_url']})")  # Clickable Link
+        if df.at[index, "html_url"]:  
+            st.markdown(f"[Issue Link]({df.at[index, 'html_url']})")  
         else:
             st.write("No Link Available")
 
     with col3:
-        # Classification Checkboxes (Mutually Exclusive)
         if st.checkbox("Standard", key=f"std_{index}", value=(df.at[index, "label"] == 1)):
             st.session_state["label"][index] = 1
         elif st.checkbox("Not Standard", key=f"not_std_{index}", value=(df.at[index, "label"] == 0)):
             st.session_state["label"][index] = 0
 
     with col4:
-        # Text Area for Reason (Default Empty Instead of NaN)
         reason_text = st.text_area(f"Reason {index}", value=st.session_state["reason"][index], key=f"reason_{index}")
         st.session_state["reason"][index] = reason_text
 
-# Button to Save Data
+# Save Button
 if st.button("Save Data"):
-    save_data()  # Now correctly runs inside Streamlit's context
+    save_data()

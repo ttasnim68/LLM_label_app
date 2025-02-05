@@ -86,7 +86,7 @@ for index in df.index[:110]:  # Show first 110 rows
             st.session_state["label"][index] = 0
 
     with col4:
-        reason_text = st.text_area(f"Reason {index}", value=st.session_state["reason"][index], key=f"reason_{index}")
+        reason_text = st.text_area(f"Reason {index+1}", value=st.session_state["reason"][index], key=f"reason_{index}")
         st.session_state["reason"][index] = reason_text
 
 # Save Button

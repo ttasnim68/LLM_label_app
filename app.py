@@ -7,10 +7,10 @@ import numpy as np
 # Define available datasets
 DATASETS = {
     "Charles": "dataset/label_Charles.csv",
-    "Lukas": "dataset/label_Lukas.csv",
-    "Jose": "dataset/label_Jose.csv",
     "Iury": "dataset/label_Iury.csv",
     "Jessica": "dataset/label_Jessica.csv",
+    "Jose": "dataset/label_Jose.csv",
+    "Lukas": "dataset/label_Lukas.csv",
 }
 
 # Streamlit UI

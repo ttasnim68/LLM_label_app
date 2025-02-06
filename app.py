@@ -16,6 +16,30 @@ DATASETS = {
 # Streamlit UI
 st.title("Issue Report Labeling System")
 
+
+# Display two textboxes on top
+st.text_area("Criteria for Standard:", """
+Cell contains most of the following key values:
+
+Quality Requirements:
+Clear title, precise language, complete information.
+
+Steps to Reproduce:
+Clear, numbered steps showing how to trigger the issue.
+Expected vs. actual results.
+
+Technical Information:
+Test cases, code examples, error logs, software versions.
+""", height=350)
+
+st.text_area("Criteria for Not Standard:", """
+Missing or unclear reproduction steps.
+Unclear core issue.
+Lacks technical evidence.
+Vague or ambiguous language.
+""", height=200)
+
+
 # User Selection Dropdown
 selected_user = st.selectbox("Select User:", list(DATASETS.keys()))
 

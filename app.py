@@ -3,6 +3,17 @@ import pandas as pd
 import json
 import os
 import numpy as np
+import requests
+from io import StringIOs
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the token
+token = os.getenv("GITHUB_TOKEN")
+
 
 # Define available datasets
 DATASETS = {
@@ -79,15 +90,68 @@ if "label" not in st.session_state:
 if "reason" not in st.session_state:
     st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
 
-# Function to Save Data
-def save_data():
-    for index in df.index[:110]:  # Save only first 110 rows
+
+
+
+# Function to save data to GitHub
+def save_data_to_github(csv_file, token, repo, path):
+    # Load current CSV from GitHub
+    url = f"https://api.github.com/repos/ttasnim/LLM_label_app/contents/CSV_FILE"
+    
+    headers = {"Authorization": f"token {token}"}
+    # Get the file contents
+    response = requests.get(url, headers=headers)
+    if response.status_code != 200:
+        st.error(f"⚠️ Error fetching file: {response.json()['message']}")
+        return
+
+    # Parse the file content (base64 encoded)
+    file_content = response.json()['content']
+    file_content_decoded = requests.utils.base64.b64decode(file_content).decode('utf-8')
+    
+    # Load the CSV into DataFrame
+    df = pd.read_csv(StringIO(file_content_decoded))
+
+    # Update data in the dataframe
+    for index in df.index[:110]:  # Update first 110 rows
         classification_value = st.session_state["label"].get(index)
         df.at[index, "label"] = classification_value if classification_value is not None else np.nan
         df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
 
-    df.to_csv(CSV_FILE, index=False)
-    st.success("✅ Data saved successfully!")
+    # Save the dataframe to CSV
+    updated_csv = df.to_csv(index=False)
+
+    # Prepare the payload to update the file in GitHub
+    update_payload = {
+        "message": "Update dataset with new labels and reasons",
+        "content": requests.utils.base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
+        "sha": response.json()['sha']
+    }
+
+    # Send the update request to GitHub
+    update_response = requests.put(url, headers=headers, json=update_payload)
+    if update_response.status_code == 200:
+        st.success("✅ Data saved to GitHub successfully!")
+    else:
+        st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+
+# Usage of the function
+if st.button("Save Data to GitHub"):
+    token = "your_personal_access_token"  # Replace with your GitHub token
+    repo = "your_github_username/your_repo_name"  # Replace with your GitHub repo name
+    path = DATASETS[selected_user]  # Path to the CSV file in the repo
+    save_data_to_github(path, token, repo, path)
+
+
+# Function to Save Data
+#def save_data():
+#    for index in df.index[:110]:  # Save only first 110 rows
+#        classification_value = st.session_state["label"].get(index)
+#        df.at[index, "label"] = classification_value if classification_value is not None else np.nan
+3        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
+
+#    df.to_csv(CSV_FILE, index=False)
+#    st.success("✅ Data saved successfully!")
 
 # Display Table with Editable Fields
 st.write(f"📊 Displaying Data for: **{selected_user}**")
@@ -115,5 +179,10 @@ for index in df.index[:110]:  # Show first 110 rows
         st.session_state["reason"][index] = reason_text
 
 # Save Button
-if st.button("Save Data"):
-    save_data()
+#if st.button("Save Data"):
+#    save_data()
+if st.button("Save Data to GitHub"):
+    token = "your_personal_access_token"  # Replace with your GitHub token
+    repo = "your_github_username/your_repo_name"  # Replace with your GitHub repo name
+    path = DATASETS[selected_user]  # Path to the CSV file in the repo
+    save_data_to_github(path, token, repo, path)

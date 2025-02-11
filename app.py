@@ -4,7 +4,7 @@ import json
 import os
 import numpy as np
 import requests
-from io import StringIOs
+from io import StringIO
 from dotenv import load_dotenv
 import os
 

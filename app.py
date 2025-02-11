@@ -11,6 +11,7 @@ DATASETS = {
     "Jessica": "dataset/label_Jessica.csv",
     "Jose": "dataset/label_Jose.csv",
     "Lukas": "dataset/label_Lukas.csv",
+    "test":"dataset/test.csv",
 }
 
 # Streamlit UI

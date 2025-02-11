@@ -6,14 +6,6 @@ import numpy as np
 import requests
 from io import StringIO
 from dotenv import load_dotenv
-import os
-
-# Load environment variables from .env file
-load_dotenv()
-
-# Access the token
-token = os.getenv("GITHUB_TOKEN")
-
 
 # Define available datasets
 DATASETS = {
@@ -182,7 +174,11 @@ for index in df.index[:110]:  # Show first 110 rows
 #if st.button("Save Data"):
 #    save_data()
 if st.button("Save Data to GitHub"):
-    token = "your_personal_access_token"  # Replace with your GitHub token
-    repo = "your_github_username/your_repo_name"  # Replace with your GitHub repo name
+    token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
+    if not token:
+        st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
+        st.stop()  # Stop execution if the token is missing
+
+    repo = "ttasnim/LLM_label_app"  # Replace with your actual GitHub repo
     path = DATASETS[selected_user]  # Path to the CSV file in the repo
     save_data_to_github(path, token, repo, path)

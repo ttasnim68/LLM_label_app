@@ -148,7 +148,7 @@ if st.button("Save Data to GitHub"):
 #    for index in df.index[:110]:  # Save only first 110 rows
 #        classification_value = st.session_state["label"].get(index)
 #        df.at[index, "label"] = classification_value if classification_value is not None else np.nan
-3        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
+#        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
 
 #    df.to_csv(CSV_FILE, index=False)
 #    st.success("✅ Data saved successfully!")

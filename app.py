@@ -94,7 +94,7 @@ def save_data_to_github(csv_file, token, repo, path):
     url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
     
     # Display the URL to fetch the file for debugging
-    st.write(f"Fetching from URL: {url}")
+    # st.write(f"Fetching from URL: {url}")
     
     headers = {"Authorization": f"token {token}"}
     
@@ -108,8 +108,8 @@ def save_data_to_github(csv_file, token, repo, path):
             df = pd.read_csv(StringIO(response.text))  # Load CSV directly from text
             
             # Display the first few rows of the DataFrame for inspection
-            st.write(f"Displaying data for {path}")
-            st.write(df.head())
+            # st.write(f"Displaying data for {path}")
+            # st.write(df.head())
             
             # Update the 'label' and 'reason' columns from the session state (assuming it's already populated)
             for index in df.index[:110]:  # Update first 110 rows

@@ -15985,4 +15985,4 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/54790
+}",0.0,test,https://github.com/saltstack/salt/issues/54790

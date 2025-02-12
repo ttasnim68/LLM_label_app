@@ -129,11 +129,12 @@ def save_data_to_github(csv_file, token, repo, path):
         st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
 
 def save_data_to_github(csv_file, token, repo, path):
-    # The correct path should be from the root of the repo
-    file_name = path.split("/")[-1]  # Extracts the file name from the path
-    
+    file_name = path.split("/")[-1]  # This gives the file name (e.g., label_Charles.csv)
+    repo_path = f"dataset/{file_name}"  # Form the full path in the GitHub repo (example: dataset/label_Charles.csv)
+
     # GitHub URL to access file contents
-    url = f"https://api.github.com/repos/{repo}/contents/{file_name}"
+    url = f"https://api.github.com/repos/{repo}/contents/{repo_path}"
+
 
     headers = {"Authorization": f"token {token}"}
     

@@ -219,5 +219,5 @@ if st.button("Save Data to GitHub"):
         st.stop()  # Stop execution if the token is missing
 
     repo = "ttasnim/LLM_label_app"  # Replace with your actual GitHub repo
-    path = DATASETS[selected_user]  # Path to the CSV file in the repo
+    path = selected_user  # Path to the CSV file in the repo
     save_data_to_github(path, token, repo, path)

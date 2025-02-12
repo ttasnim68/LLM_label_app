@@ -87,28 +87,47 @@ if "reason" not in st.session_state:
 
 
 
-# Function to save data to GitHub
-def save_data_to_github(csv_file, token, repo, path):
-    # Load current CSV from GitHub
-    url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
-    print(url)
 
+def save_data_to_github(csv_file, token, repo, path):
+    # Construct the URL to fetch the file from GitHub
+    url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    print(f"Fetching from URL: {url}")  # Debug: print the URL to check if it's correct
     
     headers = {"Authorization": f"token {token}"}
-    # Get the file contents
+    
+    # Get the file contents from GitHub
     response = requests.get(url, headers=headers)
+    
+    # Handle error if the response status code is not 200
     if response.status_code != 200:
         st.error(f"⚠️ Error fetching file: {response.json()['message']}")
+        print(f"Error response: {response.json()}")  # Debug: print error response
         return
 
     # Parse the file content (base64 encoded)
     file_content = response.json()['content']
-    #file_content_decoded = requests.utils.base64.b64decode(file_content).decode('utf-8')
-    file_content_decoded = base64.b64decode(file_content).decode('utf-8')  # Use base64 module here
-
     
-    # Load the CSV into DataFrame
-    df = pd.read_csv(StringIO(file_content_decoded))
+    # Decode the content using base64
+    try:
+        file_content_decoded = base64.b64decode(file_content).decode('utf-8')
+    except Exception as e:
+        st.error(f"⚠️ Error decoding file content: {str(e)}")
+        return
+
+    # Print the decoded content for debugging
+    print("Decoded file content:", file_content_decoded[:500])  # Print only the first 500 characters for brevity
+
+    # If file content is empty, raise an error
+    if not file_content_decoded.strip():
+        st.error("⚠️ File content is empty!")
+        return
+
+    # Try reading the CSV into DataFrame
+    try:
+        df = pd.read_csv(StringIO(file_content_decoded))
+    except Exception as e:
+        st.error(f"⚠️ Error reading CSV file: {str(e)}")
+        return
 
     # Update data in the dataframe
     for index in df.index[:110]:  # Update first 110 rows
@@ -128,10 +147,13 @@ def save_data_to_github(csv_file, token, repo, path):
 
     # Send the update request to GitHub
     update_response = requests.put(url, headers=headers, json=update_payload)
+    
+    # If the update is successful, show success message
     if update_response.status_code == 200:
         st.success("✅ Data saved to GitHub successfully!")
     else:
         st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+        print(f"Error saving data: {update_response.json()}")  # Debug: print error response from update
 
 # Function to Save Data
 #def save_data():

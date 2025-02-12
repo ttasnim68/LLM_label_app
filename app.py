@@ -47,6 +47,7 @@ Vague or ambiguous language.
 # User Selection Dropdown
 selected_user = st.selectbox("Select User:", list(DATASETS.keys()))
 
+# print(path)
 # Load the selected dataset
 CSV_FILE = DATASETS[selected_user]
 
@@ -219,5 +220,5 @@ if st.button("Save Data to GitHub"):
         st.stop()  # Stop execution if the token is missing
 
     repo = "ttasnim/LLM_label_app"  # Replace with your actual GitHub repo
-    path = selected_user  # Path to the CSV file in the repo
+    path = "label_" + selected_user + ".csv"   # Path to the CSV file in the repo
     save_data_to_github(path, token, repo, path)

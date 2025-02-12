@@ -190,10 +190,20 @@ for index in df.index[:110]:  # Show first 110 rows
             st.write("No Link Available")
 
     with col3:
-        if st.checkbox("Standard", key=f"std_{index}", value=(df.at[index, "label"] == 1)):
-            st.session_state["label"][index] = 1
-        elif st.checkbox("Not Standard", key=f"not_std_{index}", value=(df.at[index, "label"] == 0)):
-            st.session_state["label"][index] = 0
+        # For the "Standard" checkbox
+        standard_checked = st.checkbox("Standard", key=f"std_{index}", value=(df.at[index, "label"] == 1))
+        
+        # For the "Not Standard" checkbox
+        not_standard_checked = st.checkbox("Not Standard", key=f"not_std_{index}", value=(df.at[index, "label"] == 0))
+        
+        # Logic to clear the label in session_state when both checkboxes are unchecked
+        if not standard_checked and not not_standard_checked:
+            st.session_state["label"][index] = np.nan  # Clear the label when both checkboxes are unchecked
+        elif standard_checked:
+            st.session_state["label"][index] = 1  # Assign "Standard" when checked
+        elif not_standard_checked:
+            st.session_state["label"][index] = 0  # Assign "Not Standard" when checked
+
 
     with col4:
         reason_text = st.text_area(f"Reason {index+1}", value=st.session_state["reason"][index], key=f"reason_{index}")

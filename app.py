@@ -86,20 +86,6 @@ if "reason" not in st.session_state:
 
 
 
-
-
-import requests
-import base64
-import pandas as pd
-from io import StringIO
-import streamlit as st
-
-import requests
-import base64
-import pandas as pd
-from io import StringIO
-import streamlit as st
-
 def save_data_to_github(csv_file, token, repo, path):
     # Construct the URL to get the raw file from GitHub
     url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
@@ -145,17 +131,19 @@ def save_data_to_github(csv_file, token, repo, path):
             sha_response = requests.get(sha_url, headers=headers)
             
             # Check if the sha_response is in JSON format
-            if sha_response.status_code == 200:
-                try:
-                    sha_response_json = sha_response.json()  # Parse the response as JSON
-                    sha = sha_response_json.get('sha')
-                    update_payload["sha"] = sha
-                except requests.exceptions.JSONDecodeError:
-                    st.error(f"⚠️ Error decoding JSON in sha response: {sha_response.text}")
-                    return
-            else:
-                st.error(f"⚠️ Error fetching sha for file: {sha_response.text}")
+            try:
+                sha_data = sha_response.json()
+                sha = sha_data.get('sha')
+            except requests.exceptions.JSONDecodeError as e:
+                st.error(f"⚠️ Error decoding JSON in SHA response: {str(e)}")
+                st.write(f"Raw SHA Response: {sha_response.text}")
                 return
+            
+            if not sha:
+                st.error(f"⚠️ SHA not found in the response. Please check the file path.")
+                return
+
+            update_payload["sha"] = sha
 
             # Send PUT request to update the file
             update_response = requests.put(update_url, headers=headers, json=update_payload)
@@ -164,10 +152,10 @@ def save_data_to_github(csv_file, token, repo, path):
             if update_response.status_code == 200:
                 st.success("✅ Data saved to GitHub successfully!")
             else:
-                st.error(f"⚠️ Error saving data: {update_response.json().get('message', 'Unknown error')}")
+                st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
                 st.write(f"Update Response JSON: {update_response.json()}")
         except requests.exceptions.JSONDecodeError as e:
-            st.error(f"⚠️ Error decoding JSON: {str(e)}")
+            st.error(f"⚠️ Error decoding CSV response: {str(e)}")
             st.write(f"Raw Response: {response.text}")  # Display raw response for debugging
     else:
         st.error(f"⚠️ Error fetching file: {response.status_code}")

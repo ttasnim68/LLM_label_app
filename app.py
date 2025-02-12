@@ -88,6 +88,12 @@ if "reason" not in st.session_state:
 
 
 
+import requests
+import base64
+import pandas as pd
+from io import StringIO
+import streamlit as st
+
 def save_data_to_github(csv_file, token, repo, path):
     # Construct the URL to get the raw file from GitHub
     url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
@@ -132,9 +138,15 @@ def save_data_to_github(csv_file, token, repo, path):
             sha_url = f"https://api.github.com/repos/{repo}/contents/{path}"
             sha_response = requests.get(sha_url, headers=headers)
             
+            # Check if the sha_response is in JSON format
             if sha_response.status_code == 200:
-                sha = sha_response.json().get('sha')
-                update_payload["sha"] = sha
+                try:
+                    sha_response_json = sha_response.json()  # Parse the response as JSON
+                    sha = sha_response_json.get('sha')
+                    update_payload["sha"] = sha
+                except requests.exceptions.JSONDecodeError:
+                    st.error(f"⚠️ Error decoding JSON in sha response: {sha_response.text}")
+                    return
             else:
                 st.error(f"⚠️ Error fetching sha for file: {sha_response.text}")
                 return
@@ -146,7 +158,7 @@ def save_data_to_github(csv_file, token, repo, path):
             if update_response.status_code == 200:
                 st.success("✅ Data saved to GitHub successfully!")
             else:
-                st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+                st.error(f"⚠️ Error saving data: {update_response.json().get('message', 'Unknown error')}")
                 st.write(f"Update Response JSON: {update_response.json()}")
         except requests.exceptions.JSONDecodeError as e:
             st.error(f"⚠️ Error decoding JSON: {str(e)}")
@@ -154,6 +166,7 @@ def save_data_to_github(csv_file, token, repo, path):
     else:
         st.error(f"⚠️ Error fetching file: {response.status_code}")
         st.write(f"Error Response: {response.text}")
+
 
 # Function to Save Data
 #def save_data():

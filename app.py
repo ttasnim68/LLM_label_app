@@ -90,23 +90,36 @@ if "reason" not in st.session_state:
 
 def save_data_to_github(csv_file, token, repo, path):
     # Construct the URL to fetch the file from GitHub
-    url = f"https://api.github.com/repos/{repo}/contents/{path}"
-    print(f"Fetching from URL: {url}")  # Debug: print the URL to check if it's correct
+    url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
     
+    # Debug: Display the URL on the Streamlit page
+    st.write(f"Fetching from URL: {url}")  
+
     headers = {"Authorization": f"token {token}"}
-    
+
     # Get the file contents from GitHub
     response = requests.get(url, headers=headers)
-    
+
+    # Display the response status and the JSON content on Streamlit page for debugging
+    st.write(f"Response Status Code: {response.status_code}")
+    st.write(f"Response JSON: {response.json()}")
+
     # Handle error if the response status code is not 200
     if response.status_code != 200:
         st.error(f"⚠️ Error fetching file: {response.json()['message']}")
-        print(f"Error response: {response.json()}")  # Debug: print error response
         return
 
     # Parse the file content (base64 encoded)
-    file_content = response.json()['content']
-    
+    file_content = response.json().get('content', '')
+
+    # Display the file content (base64) for debugging purposes
+    st.write(f"Base64 File Content: {file_content}")
+
+    # If no content, raise an error
+    if not file_content:
+        st.error("⚠️ No content returned from GitHub. Please check if the file exists and the path is correct.")
+        return
+
     # Decode the content using base64
     try:
         file_content_decoded = base64.b64decode(file_content).decode('utf-8')
@@ -114,8 +127,8 @@ def save_data_to_github(csv_file, token, repo, path):
         st.error(f"⚠️ Error decoding file content: {str(e)}")
         return
 
-    # Print the decoded content for debugging
-    print("Decoded file content:", file_content_decoded[:500])  # Print only the first 500 characters for brevity
+    # Display the decoded content (first 500 characters) on Streamlit page for debugging
+    st.write(f"Decoded file content: {file_content_decoded[:500]}")  # Show only the first 500 characters
 
     # If file content is empty, raise an error
     if not file_content_decoded.strip():
@@ -147,13 +160,16 @@ def save_data_to_github(csv_file, token, repo, path):
 
     # Send the update request to GitHub
     update_response = requests.put(url, headers=headers, json=update_payload)
-    
+
+    # Display the response status for the update on the Streamlit page
+    st.write(f"Update Response Status: {update_response.status_code}")
+    st.write(f"Update Response JSON: {update_response.json()}")
+
     # If the update is successful, show success message
     if update_response.status_code == 200:
         st.success("✅ Data saved to GitHub successfully!")
     else:
         st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
-        print(f"Error saving data: {update_response.json()}")  # Debug: print error response from update
 
 # Function to Save Data
 #def save_data():

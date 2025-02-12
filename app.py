@@ -127,13 +127,6 @@ def save_data_to_github(csv_file, token, repo, path):
     else:
         st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
 
-# Usage of the function
-if st.button("Save Data to GitHub"):
-    token = "your_personal_access_token"  # Replace with your GitHub token
-    repo = "your_github_username/your_repo_name"  # Replace with your GitHub repo name
-    path = DATASETS[selected_user]  # Path to the CSV file in the repo
-    save_data_to_github(path, token, repo, path)
-
 
 # Function to Save Data
 #def save_data():

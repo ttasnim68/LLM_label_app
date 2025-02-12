@@ -88,7 +88,7 @@ if "reason" not in st.session_state:
 # Function to save data to GitHub
 def save_data_to_github(csv_file, token, repo, path):
     # Load current CSV from GitHub
-    url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
 
     
     headers = {"Authorization": f"token {token}"}

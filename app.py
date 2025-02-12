@@ -6,6 +6,7 @@ import numpy as np
 import requests
 from io import StringIO
 from dotenv import load_dotenv
+import base64
 
 # Define available datasets
 DATASETS = {
@@ -102,7 +103,9 @@ def save_data_to_github(csv_file, token, repo, path):
 
     # Parse the file content (base64 encoded)
     file_content = response.json()['content']
-    file_content_decoded = requests.utils.base64.b64decode(file_content).decode('utf-8')
+    #file_content_decoded = requests.utils.base64.b64decode(file_content).decode('utf-8')
+    file_content_decoded = base64.b64decode(file_content).decode('utf-8')  # Use base64 module here
+
     
     # Load the CSV into DataFrame
     df = pd.read_csv(StringIO(file_content_decoded))
@@ -119,7 +122,7 @@ def save_data_to_github(csv_file, token, repo, path):
     # Prepare the payload to update the file in GitHub
     update_payload = {
         "message": "Update dataset with new labels and reasons",
-        "content": requests.utils.base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
+        "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
         "sha": response.json()['sha']
     }
 

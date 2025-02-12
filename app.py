@@ -89,7 +89,7 @@ if "reason" not in st.session_state:
 # Function to save data to GitHub
 def save_data_to_github(csv_file, token, repo, path):
     # Load current CSV from GitHub
-    url = f"https://api.github.com/repos/{repo}/contents/dataset"
+    url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
     print(url)
 
     
@@ -220,6 +220,6 @@ if st.button("Save Data to GitHub"):
         st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
         st.stop()  # Stop execution if the token is missing
 
-    repo = "ttasnim/LLM_label_app"  # Replace with your actual GitHub repo
+    repo = "ttasnim68/LLM_label_app"  # Replace with your actual GitHub repo
     path = "label_" + selected_user + ".csv"   # Path to the CSV file in the repo
     save_data_to_github(path, token, repo, path)

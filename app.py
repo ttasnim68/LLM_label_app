@@ -102,41 +102,55 @@ def save_data_to_github(csv_file, token, repo, path):
 
     # Check if the request was successful
     if response.status_code == 200:
-        # Read the CSV content into a pandas DataFrame
-        df = pd.read_csv(StringIO(response.text))  # Load CSV directly from text
-        
-        # Display the first few rows of the DataFrame for inspection
-        st.write(f"Displaying data for {path}")
-        st.write(df.head())
-        
-        # Update the 'label' and 'reason' columns from the session state (assuming it's already populated)
-        for index in df.index[:110]:  # Update first 110 rows
-            classification_value = st.session_state["label"].get(index)
-            df.at[index, "label"] = classification_value if classification_value is not None else np.nan
-            df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
+        try:
+            # Read the CSV content into a pandas DataFrame
+            df = pd.read_csv(StringIO(response.text))  # Load CSV directly from text
+            
+            # Display the first few rows of the DataFrame for inspection
+            st.write(f"Displaying data for {path}")
+            st.write(df.head())
+            
+            # Update the 'label' and 'reason' columns from the session state (assuming it's already populated)
+            for index in df.index[:110]:  # Update first 110 rows
+                classification_value = st.session_state["label"].get(index)
+                df.at[index, "label"] = classification_value if classification_value is not None else np.nan
+                df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
 
-        # Save the modified DataFrame back to CSV
-        updated_csv = df.to_csv(index=False)
+            # Save the modified DataFrame back to CSV
+            updated_csv = df.to_csv(index=False)
 
-        # Prepare the payload to update the file in GitHub
-        update_payload = {
-            "message": "Update dataset with new labels and reasons",
-            "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
-            "sha": response.json()['sha']  # SHA of the file to update
-        }
+            # Prepare the payload to update the file in GitHub
+            update_payload = {
+                "message": "Update dataset with new labels and reasons",
+                "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8')
+            }
 
-        # GitHub API URL to update the file
-        update_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+            # GitHub API URL to update the file
+            update_url = f"https://api.github.com/repos/{repo}/contents/{path}"
 
-        # Send PUT request to update the file
-        update_response = requests.put(update_url, headers={"Authorization": f"token {token}"}, json=update_payload)
+            # Get file sha before updating it
+            sha_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+            sha_response = requests.get(sha_url, headers=headers)
+            
+            if sha_response.status_code == 200:
+                sha = sha_response.json().get('sha')
+                update_payload["sha"] = sha
+            else:
+                st.error(f"⚠️ Error fetching sha for file: {sha_response.text}")
+                return
 
-        # Display response status and message
-        if update_response.status_code == 200:
-            st.success("✅ Data saved to GitHub successfully!")
-        else:
-            st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
-            st.write(f"Update Response JSON: {update_response.json()}")
+            # Send PUT request to update the file
+            update_response = requests.put(update_url, headers=headers, json=update_payload)
+
+            # Display response status and message
+            if update_response.status_code == 200:
+                st.success("✅ Data saved to GitHub successfully!")
+            else:
+                st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+                st.write(f"Update Response JSON: {update_response.json()}")
+        except requests.exceptions.JSONDecodeError as e:
+            st.error(f"⚠️ Error decoding JSON: {str(e)}")
+            st.write(f"Raw Response: {response.text}")  # Display raw response for debugging
     else:
         st.error(f"⚠️ Error fetching file: {response.status_code}")
         st.write(f"Error Response: {response.text}")

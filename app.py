@@ -83,9 +83,9 @@ df = load_data(CSV_FILE)
 
 # Initialize session state
 # if "label" not in st.session_state:
-    st.session_state["label"] = {i: df.at[i, "label"] for i in df.index}
+st.session_state["label"] = {i: df.at[i, "label"] for i in df.index}
 # if "reason" not in st.session_state:
-    st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
+st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
 
 
 

@@ -78,6 +78,9 @@ def load_data(csv_file):
 
 df = load_data(CSV_FILE)
 
+# Update the session state for reason based on the new dataset
+st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
+
 # Initialize session state
 if "label" not in st.session_state:
     st.session_state["label"] = {i: df.at[i, "label"] for i in df.index}
@@ -114,6 +117,7 @@ def save_data_to_github(csv_file, token, repo, path):
                 classification_value = st.session_state["label"].get(index)
                 df.at[index, "label"] = classification_value if classification_value is not None else np.nan
                 df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
+            
 
             # Save the modified DataFrame back to CSV
             updated_csv = df.to_csv(index=False)
@@ -208,7 +212,7 @@ for index in df.index[:110]:  # Show first 110 rows
     with col4:
         reason_text = st.text_area(f"Reason {index+1}", value=st.session_state["reason"][index], key=f"reason_{index}")
         st.session_state["reason"][index] = reason_text
-
+   
 # Save Button
 #if st.button("Save Data"):
 #    save_data()

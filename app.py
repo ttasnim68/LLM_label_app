@@ -89,87 +89,57 @@ if "reason" not in st.session_state:
 
 
 def save_data_to_github(csv_file, token, repo, path):
-    # Construct the URL to fetch the file from GitHub
-    url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
+    # Construct the URL to get the raw file from GitHub
+    url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
     
-    # Debug: Display the URL on the Streamlit page
-    st.write(f"Fetching from URL: {url}")  
-
+    # Display the URL to fetch the file for debugging
+    st.write(f"Fetching from URL: {url}")
+    
     headers = {"Authorization": f"token {token}"}
+    
+    # Send GET request to download the raw CSV file
+    response = requests.get(url)
 
-    # Get the file contents from GitHub
-    response = requests.get(url, headers=headers)
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Read the CSV content into a pandas DataFrame
+        df = pd.read_csv(StringIO(response.text))  # Load CSV directly from text
+        
+        # Display the first few rows of the DataFrame for inspection
+        st.write(f"Displaying data for {path}")
+        st.write(df.head())
+        
+        # Update the 'label' and 'reason' columns from the session state (assuming it's already populated)
+        for index in df.index[:110]:  # Update first 110 rows
+            classification_value = st.session_state["label"].get(index)
+            df.at[index, "label"] = classification_value if classification_value is not None else np.nan
+            df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
 
-    # Display the response status and the JSON content on Streamlit page for debugging
-    st.write(f"Response Status Code: {response.status_code}")
-    st.write(f"Response JSON: {response.json()}")
+        # Save the modified DataFrame back to CSV
+        updated_csv = df.to_csv(index=False)
 
-    # Handle error if the response status code is not 200
-    if response.status_code != 200:
-        st.error(f"⚠️ Error fetching file: {response.json()['message']}")
-        return
+        # Prepare the payload to update the file in GitHub
+        update_payload = {
+            "message": "Update dataset with new labels and reasons",
+            "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
+            "sha": response.json()['sha']  # SHA of the file to update
+        }
 
-    # Parse the file content (base64 encoded)
-    file_content = response.json().get('content', '')
+        # GitHub API URL to update the file
+        update_url = f"https://api.github.com/repos/{repo}/contents/{path}"
 
-    # Display the file content (base64) for debugging purposes
-    st.write(f"Base64 File Content: {file_content}")
+        # Send PUT request to update the file
+        update_response = requests.put(update_url, headers={"Authorization": f"token {token}"}, json=update_payload)
 
-    # If no content, raise an error
-    if not file_content:
-        st.error("⚠️ No content returned from GitHub. Please check if the file exists and the path is correct.")
-        return
-
-    # Decode the content using base64
-    try:
-        file_content_decoded = base64.b64decode(file_content).decode('utf-8')
-    except Exception as e:
-        st.error(f"⚠️ Error decoding file content: {str(e)}")
-        return
-
-    # Display the decoded content (first 500 characters) on Streamlit page for debugging
-    st.write(f"Decoded file content: {file_content_decoded[:500]}")  # Show only the first 500 characters
-
-    # If file content is empty, raise an error
-    if not file_content_decoded.strip():
-        st.error("⚠️ File content is empty!")
-        return
-
-    # Try reading the CSV into DataFrame
-    try:
-        df = pd.read_csv(StringIO(file_content_decoded))
-    except Exception as e:
-        st.error(f"⚠️ Error reading CSV file: {str(e)}")
-        return
-
-    # Update data in the dataframe
-    for index in df.index[:110]:  # Update first 110 rows
-        classification_value = st.session_state["label"].get(index)
-        df.at[index, "label"] = classification_value if classification_value is not None else np.nan
-        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
-
-    # Save the dataframe to CSV
-    updated_csv = df.to_csv(index=False)
-
-    # Prepare the payload to update the file in GitHub
-    update_payload = {
-        "message": "Update dataset with new labels and reasons",
-        "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
-        "sha": response.json()['sha']
-    }
-
-    # Send the update request to GitHub
-    update_response = requests.put(url, headers=headers, json=update_payload)
-
-    # Display the response status for the update on the Streamlit page
-    st.write(f"Update Response Status: {update_response.status_code}")
-    st.write(f"Update Response JSON: {update_response.json()}")
-
-    # If the update is successful, show success message
-    if update_response.status_code == 200:
-        st.success("✅ Data saved to GitHub successfully!")
+        # Display response status and message
+        if update_response.status_code == 200:
+            st.success("✅ Data saved to GitHub successfully!")
+        else:
+            st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+            st.write(f"Update Response JSON: {update_response.json()}")
     else:
-        st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
+        st.error(f"⚠️ Error fetching file: {response.status_code}")
+        st.write(f"Error Response: {response.text}")
 
 # Function to Save Data
 #def save_data():

@@ -52,7 +52,7 @@ selected_user = st.selectbox("Select User:", list(DATASETS.keys()))
 # Load the selected dataset
 CSV_FILE = DATASETS[selected_user]
 
-@st.cache_data
+# @st.cache_data
 def load_data(csv_file):
     if not os.path.exists(csv_file):
         st.error(f"⚠️ File {csv_file} not found!")

@@ -90,6 +90,7 @@ if "reason" not in st.session_state:
 def save_data_to_github(csv_file, token, repo, path):
     # Load current CSV from GitHub
     url = f"https://api.github.com/repos/{repo}/contents/dataset/{path}"
+    print(url)
 
     
     headers = {"Authorization": f"token {token}"}

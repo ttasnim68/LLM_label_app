@@ -133,52 +133,6 @@ def save_data_to_github(csv_file, token, repo, path):
     else:
         st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
 
-def save_data_to_github(csv_file, token, repo, path):
-    file_name = path.split("/")[-1]  # This gives the file name (e.g., label_Charles.csv)
-    repo_path = f"dataset/{file_name}"  # Form the full path in the GitHub repo (example: dataset/label_Charles.csv)
-
-    # GitHub URL to access file contents
-    url = f"https://api.github.com/repos/{repo}/contents/{repo_path}"
-
-
-    headers = {"Authorization": f"token {token}"}
-    
-    # Get the file contents
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        st.error(f"⚠️ Error fetching file: {response.json()['message']}")
-        return
-
-    # Parse the file content (base64 encoded)
-    file_content = response.json()['content']
-    file_content_decoded = requests.utils.base64.b64decode(file_content).decode('utf-8')
-
-    # Load the CSV into DataFrame
-    df = pd.read_csv(StringIO(file_content_decoded))
-
-    # Update data in the dataframe
-    for index in df.index[:110]:  # Update first 110 rows
-        classification_value = st.session_state["label"].get(index)
-        df.at[index, "label"] = classification_value if classification_value is not None else np.nan
-        df.at[index, "reason"] = st.session_state["reason"][index] if st.session_state["reason"][index] != "" else np.nan
-
-    # Save the dataframe to CSV
-    updated_csv = df.to_csv(index=False)
-
-    # Prepare the payload to update the file in GitHub
-    update_payload = {
-        "message": "Update dataset with new labels and reasons",
-        "content": requests.utils.base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
-        "sha": response.json()['sha']
-    }
-
-    # Send the update request to GitHub
-    update_response = requests.put(url, headers=headers, json=update_payload)
-    if update_response.status_code == 200:
-        st.success("✅ Data saved to GitHub successfully!")
-    else:
-        st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
-
 # Function to Save Data
 #def save_data():
 #    for index in df.index[:110]:  # Save only first 110 rows

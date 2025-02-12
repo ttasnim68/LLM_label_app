@@ -15,7 +15,6 @@ DATASETS = {
     "Jessica": "dataset/label_Jessica.csv",
     "Jose": "dataset/label_Jose.csv",
     "Lukas": "dataset/label_Lukas.csv",
-    "test":"dataset/test.csv",
 }
 
 # Streamlit UI
@@ -155,7 +154,7 @@ def save_data_to_github(csv_file, token, repo, path):
 
             # Display response status and message
             if update_response.status_code == 200:
-                st.success("✅ Data saved to GitHub successfully!")
+                st.success("✅ Data saved successfully!")
             else:
                 st.error(f"⚠️ Error saving data: {update_response.json()['message']}")
                 st.write(f"Update Response JSON: {update_response.json()}")
@@ -216,7 +215,7 @@ for index in df.index[:110]:  # Show first 110 rows
 # Save Button
 #if st.button("Save Data"):
 #    save_data()
-if st.button("Save Data to GitHub"):
+if st.button("Save Data"):
     token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
     if not token:
         st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")

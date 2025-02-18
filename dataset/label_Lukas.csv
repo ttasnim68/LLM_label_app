@@ -2772,7 +2772,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/56444
+}",1.0,"Title, clear setup, repro, setup",https://github.com/saltstack/salt/issues/56444
 1248071,509574564,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=9&per_page=100"",
     ""page"": 9,
@@ -2908,7 +2908,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/pull/55066
+}",0.0,This is a PR and not an ISSUE,https://github.com/saltstack/salt/pull/55066
 1251565,123508237,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=44&per_page=100"",
     ""page"": 44,
@@ -3087,7 +3087,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/29942
+}",1.0,"Setup, Repro and error description",https://github.com/saltstack/salt/issues/29942
 1251583,123084699,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=44&per_page=100"",
     ""page"": 44,
@@ -3253,7 +3253,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/29866
+}",1.0,"Version, Setup, Reproducable",https://github.com/saltstack/salt/issues/29866
 1251659,121136451,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=45&per_page=100"",
     ""page"": 45,
@@ -3406,7 +3406,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/29554
+}",0.0,No dexcription,https://github.com/saltstack/salt/issues/29554
 1254615,44475122,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=74&per_page=100"",
     ""page"": 74,
@@ -3572,7 +3572,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/16277
+}",0.0,"no version, issue is a question, no clear target",https://github.com/saltstack/salt/issues/16277
 1254638,43947597,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=75&per_page=100"",
     ""page"": 75,
@@ -3804,7 +3804,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/16152
+}",1.0,"Clear problem, setup, reproduacable config, version",https://github.com/saltstack/salt/issues/16152
 1254785,41453854,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=76&per_page=100"",
     ""page"": 76,
@@ -3944,7 +3944,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/15369
+}",0.0,"Unclear title, not description,",https://github.com/saltstack/salt/issues/15369
 1255244,33893299,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=81&per_page=100"",
     ""page"": 81,
@@ -4084,7 +4084,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/12913
+}",1.0,"Version, Clear description and stating where it happens",https://github.com/saltstack/salt/issues/12913
 1255828,25592561,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=86&per_page=100"",
     ""page"": 86,

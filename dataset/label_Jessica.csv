@@ -958,7 +958,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Steps to reproduce, output, and software versions"
 1344487,7729031,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

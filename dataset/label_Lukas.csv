@@ -6092,7 +6092,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/36911
+}",0.0,Pull Reequst,https://github.com/pandas-dev/pandas/pull/36911
 1332297,705045382,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6355,7 +6355,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/35604
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/35604
 1333626,372874605,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6501,7 +6501,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/23291
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/23291
 1333791,341201671,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6800,7 +6800,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/18826
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/18826
 1334226,269649766,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7086,7 +7086,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/15679
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/15679
 1334598,211907176,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7232,7 +7232,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/15570
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/15570
 1335131,159036957,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7684,7 +7684,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/10350
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/10350
 1336381,42803139,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7830,7 +7830,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/8275
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/8275
 1336451,40082909,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8002,7 +8002,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/8007
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/8007
 1336473,39428821,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8174,7 +8174,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/7924
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/7924
 1336895,29640384,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8314,7 +8314,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/6659
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/6659
 1340163,12631073,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8887,7 +8887,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/6611
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/6611
 1337695,9782584,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9287,7 +9287,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/34641
+}",0.0,PR,https://github.com/pandas-dev/pandas/pull/34641
 1340020,20036816,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9798,7 +9798,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/19016
+}",0.0,PR,https://github.com/numpy/numpy/pull/19016
 1341344,730055672,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -9908,7 +9908,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/17645
+}",0.0,PR,https://github.com/numpy/numpy/pull/17645
 1342190,380450834,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10018,7 +10018,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/12381
+}",0.0,PR,https://github.com/numpy/numpy/pull/12381
 1344841,7727140,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10385,7 +10385,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/7979
+}",0.0,PR,https://github.com/numpy/numpy/pull/7979
 1343496,117418206,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10495,7 +10495,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/6695
+}",0.0,PR,https://github.com/numpy/numpy/pull/6695
 1343656,63452328,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11148,7 +11148,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/9692
+}",0.0,PR,https://github.com/numpy/numpy/pull/9692
 1346476,212546946,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

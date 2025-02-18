@@ -165,47 +165,6 @@ def save_data_to_github(csv_file, token, repo, path):
         st.error(f"⚠️ Error fetching file: {response.status_code}")
         st.write(f"Error Response: {response.text}")
 
-# Add custom CSS for sticky button positioning
-st.markdown("""
-    <style>
-    .floating-button {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    .floating-button:hover {
-        background-color: #45a049;
-    }
-    .css-1d391kg { 
-        width: 80px;  /* Set the desired width */
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# Move the Save Data button to the sidebar
-save_button_sidebar = st.sidebar.button("Save Data")
-
-# Handle the button's functionality
-if save_button_sidebar:
-    token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
-    if not token:
-        st.sidebar.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
-        st.stop()  # Stop execution if the token is missing
-
-    repo = "ttasnim68/LLM_label_app"  # Replace with your actual GitHub repo
-    path = "dataset/label_" + selected_user + ".csv"   # Path to the CSV file in the repo
-    save_data_to_github(path, token, repo, path)
-
-# Continue with the rest of your code (dataset display, text areas, etc.)
-
 
 
 # Function to Save Data
@@ -256,12 +215,12 @@ for index in df.index[:110]:  # Show first 110 rows
 # Save Button
 #if st.button("Save Data"):
 #    save_data()
-# if st.button("Save Data"):
-#    token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
-#    if not token:
-#        st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
-#        st.stop()  # Stop execution if the token is missing
+if st.button("Save Data"):
+    token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
+    if not token:
+        st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
+        st.stop()  # Stop execution if the token is missing
 
-#    repo = "ttasnim68/LLM_label_app"  # Replace with your actual GitHub repo
-#    path = "dataset/label_" + selected_user + ".csv"   # Path to the CSV file in the repo
-#    save_data_to_github(path, token, repo, path)
+    repo = "ttasnim68/LLM_label_app"  # Replace with your actual GitHub repo
+    path = "dataset/label_" + selected_user + ".csv"   # Path to the CSV file in the repo
+    save_data_to_github(path, token, repo, path)

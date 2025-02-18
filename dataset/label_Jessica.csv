@@ -291,7 +291,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Software versions, code examples, steps"
 1331443,961776588,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -470,7 +470,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Detailed,  versions, problem description, code sample"
 1335529,119500564,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -610,7 +610,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Lack details. Instead, it presents a link to stack overflow."
 1338351,3032633,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

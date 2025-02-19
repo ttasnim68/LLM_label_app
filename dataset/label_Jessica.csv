@@ -9720,7 +9720,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Versions, code samples and outputs and the description is clear. "
 1337085,25447653,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

@@ -9427,7 +9427,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Vague description, missing key values"
 1258491,53886703,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=17&per_page=100"",
     ""page"": 17,
@@ -9567,7 +9567,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It has a good title, description and versions, but it is short and is missing the other attributes (steps to reproduce, code sample)."
 1333425,408547241,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

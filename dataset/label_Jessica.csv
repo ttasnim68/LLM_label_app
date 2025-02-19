@@ -291,7 +291,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",1.0,"Software versions, code examples, steps"
+}",0.0,Missing all versions and clear steps to reproduce 
 1331443,961776588,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

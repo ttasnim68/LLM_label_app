@@ -15418,7 +15418,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Code samples, expected and wrong outputs, versions and allows reproducibility "
 1251004,148146397,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=38&per_page=100"",
     ""page"": 38,

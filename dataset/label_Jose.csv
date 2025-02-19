@@ -11253,7 +11253,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1341361,716517326,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11357,7 +11357,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Issue reported in another link. 
 1341604,554452947,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11474,7 +11474,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent Steps to reproduce.
 1343337,137020138,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11614,7 +11614,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Steps to reproduce not well defined.
 1344022,7731522,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11718,7 +11718,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Expected output is not clear.
 1346025,542386112,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11877,7 +11877,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1346693,105216447,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11987,7 +11987,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1249206,263411253,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=20&per_page=100"",
     ""page"": 20,
@@ -12140,7 +12140,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Expected output is not presented.
 1249236,259413815,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=21&per_page=100"",
     ""page"": 21,
@@ -12306,7 +12306,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Expected output is not presented.
 1250041,194069869,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=29&per_page=100"",
     ""page"": 29,

@@ -3042,7 +3042,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Missing steps to reproduce, versions, any example of code. It is only the description."
 1258427,58116873,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=16&per_page=100"",
     ""page"": 16,

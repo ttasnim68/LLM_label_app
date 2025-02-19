@@ -854,7 +854,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Title and description are unclear. Not clear reproduction steps. 
 1343915,7731733,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

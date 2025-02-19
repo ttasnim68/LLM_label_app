@@ -7720,7 +7720,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1347066,7723884,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -7860,7 +7860,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Full description seems to be in a different issue.
 1347075,7723796,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -8000,7 +8000,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Full description seems to be in a different issue.
 1247760,631601606,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=6&per_page=100"",
     ""page"": 6,
@@ -8149,7 +8149,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1257235,239826306,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=4&per_page=100"",
     ""page"": 4,
@@ -8276,7 +8276,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent Steps to reproduce
 1258863,34497522,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=21&per_page=100"",
     ""page"": 21,
@@ -8416,7 +8416,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is more of a suggestion than a bug.
 1331341,1021185466,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8556,7 +8556,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1333679,359991650,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8715,7 +8715,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1334544,219581646,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8845,7 +8845,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1335504,122082544,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8998,7 +8998,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent Steps to reproduce
 1337531,12715445,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9151,7 +9151,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,The issue seems to be reported in a stack overflow post.
 1337894,7239081,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

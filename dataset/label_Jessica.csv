@@ -7548,7 +7548,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It does not contain step to reproduce, code sample, versions"
 1344628,7728598,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

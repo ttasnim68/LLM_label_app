@@ -14486,7 +14486,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Description, setup, steps to reproduce and versions"
 1250506,168425961,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=33&per_page=100"",
     ""page"": 33,
@@ -14639,7 +14639,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Clear title and description, steps do reproduce, version."
 1259478,14362566,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=27&per_page=100"",
     ""page"": 27,
@@ -14766,7 +14766,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Only a small description. missing code, versions, steps to reproduce..."
 1255519,29829183,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=83&per_page=100"",
     ""page"": 83,
@@ -15112,7 +15112,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Vague, unclear title, missing steps to reproduce and versions"
 1248348,403457535,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=12&per_page=100"",
     ""page"": 12,
@@ -15252,7 +15252,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Clear description, Setup, versions, steps to reproduce"
 1250642,163430633,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=35&per_page=100"",
     ""page"": 35,

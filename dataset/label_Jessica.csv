@@ -6763,7 +6763,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Pull request. It contains an error, but it does not contain the attributes."
 1341496,620544815,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6873,7 +6873,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Pull request. No info.
 1341524,606435972,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

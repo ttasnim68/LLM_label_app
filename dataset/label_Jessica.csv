@@ -7162,7 +7162,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Pull request. 
 1342311,348987778,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -7285,7 +7285,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Pull request. Missing steps to reproduce, versions."
 1342785,257584466,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

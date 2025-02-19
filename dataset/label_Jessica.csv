@@ -15777,7 +15777,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Description, Steps to reproduce, output and versions."
 1251266,134823802,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=41&per_page=100"",
     ""page"": 41,

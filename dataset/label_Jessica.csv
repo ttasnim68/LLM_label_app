@@ -10506,7 +10506,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"The description is not completely clear; it raised doubts. Missing version, it is not precise."
 1343862,7731855,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10943,7 +10943,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Feature request.
 1259500,13219163,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=27&per_page=100"",
     ""page"": 27,
@@ -11429,7 +11429,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Description is vague, and it seems to have step to reproduce and the error, but it is not well structured. It points to stack overflow. Also, It does not contain the versions."
 1337860,7765604,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -11609,7 +11609,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"Title is vague, misses more detailed step to reproduce, versions and error and expected outputs."
 1338434,2464176,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -11889,7 +11889,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Code sample, versions, error."
 1344042,7731492,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

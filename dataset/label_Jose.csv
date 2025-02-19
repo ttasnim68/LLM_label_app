@@ -5033,7 +5033,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1333227,473627272,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5137,7 +5137,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1334448,233845009,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5309,7 +5309,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1334981,171021648,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5449,7 +5449,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1335470,125857583,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5589,7 +5589,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1336307,46217313,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5735,7 +5735,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1337996,6061045,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5862,7 +5862,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent steps to reproduce. Just a sample code.
 1338331,3208633,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5989,7 +5989,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent steps to reproduce. It does not seem to be an issue.
 1340127,14532480,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6116,7 +6116,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Absent steps to reproduce. Just some paragraphs.
 1340503,4549041,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6254,7 +6254,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Empty description
 1340711,2971698,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6394,7 +6394,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Description with one sentence
 1341118,899023642,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6504,7 +6504,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,This is a pull request.
 1344632,7728585,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

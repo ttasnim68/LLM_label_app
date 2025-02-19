@@ -12902,7 +12902,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",1.0,"Description, Steps to reproduce and output. Missing versions."
 1257804,127539155,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=10&per_page=100"",
     ""page"": 10,
@@ -13335,7 +13335,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,Only a vague sentence
 1259126,24599109,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=23&per_page=100"",
     ""page"": 23,
@@ -13616,7 +13616,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",,
+}",0.0,only a brief description with a URL
 1248832,312641879,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=16&per_page=100"",
     ""page"": 16,

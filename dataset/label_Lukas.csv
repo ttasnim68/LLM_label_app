@@ -13750,7 +13750,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",1.0,,https://github.com/saltstack/salt/issues/17245
+}",1.0,"Setup sparse, but addresses issue, expectation, point to error source",https://github.com/saltstack/salt/issues/17245
 1258901,32806323,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=21&per_page=100"",
     ""page"": 21,
@@ -13877,7 +13877,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/12540
+}",0.0,Feature request,https://github.com/saltstack/salt/issues/12540
 1254603,44767389,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=74&per_page=100"",
     ""page"": 74,
@@ -14017,7 +14017,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/16345
+}",0.0,Setup is missing,https://github.com/saltstack/salt/issues/16345
 1255006,37880572,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=78&per_page=100"",
     ""page"": 78,
@@ -14144,7 +14144,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",1.0,,https://github.com/saltstack/salt/issues/14235
+}",1.0,"Incomplete, as issue description is missing, only setup",https://github.com/saltstack/salt/issues/14235
 1255040,37471366,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=79&per_page=100"",
     ""page"": 79,

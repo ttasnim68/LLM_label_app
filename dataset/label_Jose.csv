@@ -2275,7 +2275,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,bug not clear. Steps to reproduce absent.
+}",1.0,bug not clear. Steps to reproduce absent.
 1258011,109111718,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=12&per_page=100"",
     ""page"": 12,
@@ -2594,7 +2594,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Just a long text description
+}",1.0,Just a long text description
 1258611,46430613,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=18&per_page=100"",
     ""page"": 18,
@@ -5033,7 +5033,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
+}",1.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1333227,473627272,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5589,7 +5589,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
+}",1.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1336307,46217313,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6504,7 +6504,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a pull request.
+}",1.0,Marked as 0: This is a pull request.
 1344632,7728585,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6718,7 +6718,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a pull request.
+}",1.0,Marked as 0: This is a pull request.
 1342296,350543079,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -7720,7 +7720,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a pull request.
+}",1.0,This is a pull request.
 1347066,7723884,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -8416,7 +8416,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is more of a suggestion than a bug.
+}",1.0,This is more of a suggestion than a bug.
 1331341,1021185466,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8715,7 +8715,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a pull request.
+}",1.0,Marked as 0: This is a pull request.
 1334544,219581646,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -10655,7 +10655,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
+}",1.0,"It is detailed, but the presentation is not standard. (it should be the standard of this project, as several others had the same presentation)"
 1332936,565742597,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -13553,7 +13553,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Absent Steps to reproduce.
+}",1.0,Absent Steps to reproduce.
 1250655,162708548,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=35&per_page=100"",
     ""page"": 35,

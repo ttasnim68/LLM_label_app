@@ -5953,7 +5953,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"Clear title and description, code sample, versions."
+}",1.0,"Clear title and description, code sample, versions."
 1339227,333325369,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7285,7 +7285,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"Pull request. Missing steps to reproduce, versions."
+}",1.0,"Marked as 0: Pull request. Missing steps to reproduce, versions."
 1342785,257584466,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10146,7 +10146,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Pull request. Missing key values.
+}",1.0,Marked as 0: Pull request. Missing key values.
 1339749,54415140,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -10292,7 +10292,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Pull request. Missing key values.
+}",1.0,Marked as 0: Pull request. Missing key values.
 1342699,274774913,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10402,7 +10402,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Pull request. Missing key values.
+}",1.0,Marked as 0: Pull request. Missing key values.
 1343290,149510659,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

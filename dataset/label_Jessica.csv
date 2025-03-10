@@ -2110,7 +2110,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"It has a description asking for a new feature, but it misses all the other attributes (code, step do reproduce, versions)."
+}",1.0,"Marked as 0: It has a description asking for a new feature, but it misses all the other attributes (code, step do reproduce, versions)."
 1258266,76777335,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=15&per_page=100"",
     ""page"": 15,
@@ -10943,7 +10943,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,Feature request.
+}",1.0,Marked as 0: Feature request.
 1259500,13219163,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=27&per_page=100"",
     ""page"": 27,

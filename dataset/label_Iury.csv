@@ -2290,7 +2290,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request
+}",1.0,Marked as 0: This is not a bug report but a feature request
 1257620,159363212,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=8&per_page=100"",
     ""page"": 8,
@@ -2570,7 +2570,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request
+}",1.0,Marked as 0: This is not a bug report but a feature request
 1258150,96965732,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=14&per_page=100"",
     ""page"": 14,
@@ -5121,7 +5121,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request.
+}",1.0,Marked as 0: This is not a bug report but a feature request.
 1336271,47425133,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5698,7 +5698,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request.
+}",1.0,Marked as 0: This is not a bug report but a feature request.
 1339980,24505047,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5789,7 +5789,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request.
+}",1.0,Marked as 0: This is not a bug report but a feature request.
 1340200,11217123,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5916,7 +5916,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not a bug report but a feature request.
+}",0.0,Marked as 0: This is not a bug report but a feature request.
 1340407,5786615,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7158,7 +7158,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"Only a brief description is provided, with no steps to reproduce or technical information."
+}",1.0,"Only a brief description is provided, with no steps to reproduce or technical information."
 1343130,186159444,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -8240,7 +8240,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a feature request.
+}",1.0,Marked as 0: This is a feature request.
 1334847,184924744,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8497,7 +8497,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a feature request.
+}",1.0,Marked as 0: This is a feature request.
 1331520,939108178,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9800,7 +9800,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is not actually a bug but a feature request based on a missing argument.
+}",1.0,Marked as 0: This is not actually a bug but a feature request based on a missing argument.
 1344509,7728967,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10080,7 +10080,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,"The problem is not very well described, and there are no steps to reproduce it."
+}",1.0,"The problem is not very well described, and there are no steps to reproduce it."
 1249525,233667782,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=23&per_page=100"",
     ""page"": 23,
@@ -10990,7 +10990,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This is a feature release.
+}",1.0,Marked as 0: This is a feature release.
 1341252,787769469,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -13967,7 +13967,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason
         }
     ],
     ""description"": []
-}",0.0,This ia a feature request.
+}",1.0,Marked as 0: This ia a feature request.
 1248223,433186538,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=10&per_page=100"",
     ""page"": 10,

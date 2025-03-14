@@ -180,7 +180,7 @@ def save_data_to_github(csv_file, token, repo, path):
 # Display Table with Editable Fields
 st.write(f"📊 Displaying Data for: **{selected_user}**")
 
-for index in df.index[:110]:  # Show first 110 rows
+for index in df.index[:100]:  # Show first 110 rows
     col1, col2, col3, col4 = st.columns([1, 3, 2, 3])
 
     with col1:

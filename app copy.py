@@ -10,11 +10,11 @@ import base64
 
 # Define available datasets
 DATASETS = {
-    # "Charles": "dataset/label_Charles.csv",
+    "Charles": "dataset/label_Charles.csv",
     "Iury": "dataset/label_Iury.csv",
     "Jessica": "dataset/label_Jessica.csv",
-    # "Jose": "dataset/label_Jose.csv",
-    # "Lukas": "dataset/label_Lukas.csv",
+    "Jose": "dataset/label_Jose.csv",
+    "Lukas": "dataset/label_Lukas.csv",
 }
 
 # Streamlit UI
@@ -25,20 +25,18 @@ st.title("Issue Report Labeling System")
 st.text_area("Criteria for Standard:", """
 Cell contains most of the following key values:
 
-1. Issue triggering steps
-2. Stack traces (for crashes/errors)
-3. Product/component version
-4. Hardware/configuration info
-5. Clear, descriptive title/summary
-6. Related software versions
-7. Test cases demonstrating the issue
-8. Code examples showing the problem
-9. Precise, unambiguous language
-10. Operating system details
+Quality Requirements:
+Clear title, precise language, complete information.
 
+Steps to Reproduce:
+Clear, numbered steps showing how to trigger the issue.
+Expected vs. actual results.
+
+Technical Information:
+Test cases, code examples, error logs, software versions.
 """, height=350)
 
-st.text_area("Criteria for Not Standard: Missing the above criteria. Such as:", """
+st.text_area("Criteria for Not Standard:", """
 Missing or unclear reproduction steps.
 Unclear core issue.
 Lacks technical evidence.
@@ -182,7 +180,7 @@ def save_data_to_github(csv_file, token, repo, path):
 # Display Table with Editable Fields
 st.write(f"📊 Displaying Data for: **{selected_user}**")
 
-for index in df.index[:200]:  # Show first 100 rows
+for index in df.index[:110]:  # Show first 110 rows
     col1, col2, col3, col4 = st.columns([1, 3, 2, 3])
 
     with col1:

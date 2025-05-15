@@ -88,10 +88,48 @@ st.session_state["label"] = {i: df.at[i, "label"] for i in df.index}
 # if "reason" not in st.session_state:
 st.session_state["reason"] = {i: df.at[i, "reason"] for i in df.index}
 
+def save_data_to_github(df_to_save, token, repo, path):
+    headers = {"Authorization": f"token {token}"}
+
+    # Convert the updated dataframe to CSV string
+    updated_csv = df_to_save.to_csv(index=False)
+
+    # Get file sha before updating it
+    sha_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    sha_response = requests.get(sha_url, headers=headers)
+    
+    try:
+        sha_data = sha_response.json()
+        sha = sha_data.get('sha')
+    except requests.exceptions.JSONDecodeError as e:
+        st.error(f"⚠️ Error decoding JSON in SHA response: {str(e)}")
+        st.write(f"Raw SHA Response: {sha_response.text}")
+        return
+    
+    if not sha:
+        st.error(f"⚠️ SHA not found in the response. Please check the file path.")
+        return
+
+    # Prepare the payload to update the file in GitHub
+    update_payload = {
+        "message": "Update dataset with new labels and reasons",
+        "content": base64.b64encode(updated_csv.encode('utf-8')).decode('utf-8'),
+        "sha": sha
+    }
+
+    # Send PUT request to update the file
+    update_url = f"https://api.github.com/repos/{repo}/contents/{path}"
+    update_response = requests.put(update_url, headers=headers, json=update_payload)
+
+    if update_response.status_code in [200, 201]:
+        st.success("✅ Data saved successfully to GitHub!")
+    else:
+        st.error(f"⚠️ Error saving data: {update_response.json().get('message', 'Unknown error')}")
+        st.write(update_response.json())
 
 
 
-def save_data_to_github(csv_file, token, repo, path):
+def save_data_to_github_old(csv_file, token, repo, path):
     # Construct the URL to get the raw file from GitHub
     url = f"https://raw.githubusercontent.com/{repo}/main/{path}"
     
@@ -218,11 +256,17 @@ for index in df.index[:200]:  # Show first 100 rows
 #if st.button("Save Data"):
 #    save_data()
 if st.button("Save Data"):
-    token = st.secrets["GITHUB_TOKEN"]  # Access the token from Streamlit Secrets
+    token = st.secrets["GITHUB_TOKEN"]
     if not token:
         st.error("⚠️ GitHub token not found. Please set the GITHUB_TOKEN secret.")
-        st.stop()  # Stop execution if the token is missing
+        st.stop()
 
-    repo = "ttasnim68/LLM_label_app"  # Replace with your actual GitHub repo
-    path = "dataset/label_" + selected_user + ".csv"   # Path to the CSV file in the repo
-    save_data_to_github(path, token, repo, path)
+    # Update df from session state before saving
+    for index in df.index[:200]:
+        df.at[index, "label"] = st.session_state["label"].get(index, np.nan)
+        df.at[index, "reason"] = st.session_state["reason"].get(index, "")
+
+    repo = "ttasnim68/LLM_label_app"
+    path = "dataset/label_" + selected_user + ".csv"
+    save_data_to_github(df, token, repo, path)
+

@@ -16478,7 +16478,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/18576
+}",1.0,Enough criterias for standard,https://github.com/saltstack/salt/issues/18576
 1332154,741022211,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -16631,7 +16631,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/37763
+}",1.0,Enough criterias for standard,https://github.com/pandas-dev/pandas/issues/37763
 1248332,406740297,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=11&per_page=100"",
     ""page"": 11,
@@ -16771,7 +16771,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/51501
+}",1.0,Enough criterias for standard,https://github.com/saltstack/salt/issues/51501
 1254906,39522837,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=77&per_page=100"",
     ""page"": 77,
@@ -16911,7 +16911,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/14741
+}",1.0,Enough criterias for standard,https://github.com/saltstack/salt/issues/14741
 1342972,220238233,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -17083,7 +17083,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/8911
+}",0.0,Enough criterias for standard,https://github.com/numpy/numpy/pull/8911
 1248369,397453408,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=12&per_page=100"",
     ""page"": 12,

@@ -18784,7 +18784,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/46259
+}",0.0,Not Enough criterias for standard,https://github.com/saltstack/salt/issues/46259
 1335078,164996726,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -18950,7 +18950,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/13626
+}",1.0,Enough criterias for standard,https://github.com/pandas-dev/pandas/issues/13626
 1332029,774480686,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -19096,7 +19096,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/38681
+}",0.0,Not Enough criterias for standard,https://github.com/pandas-dev/pandas/pull/38681
 1257837,123539855,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=11&per_page=100"",
     ""page"": 11,
@@ -19315,7 +19315,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/29954
+}",1.0,Enough criterias for standard,https://github.com/saltstack/salt/issues/29954
 1340144,13746996,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -19455,7 +19455,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/3478
+}",1.0,Enough criterias for standard,https://github.com/pandas-dev/pandas/issues/3478
 1250480,169733735,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=33&per_page=100"",
     ""page"": 33,
@@ -19621,7 +19621,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/35251
+}",1.0,Enough criterias for standard,https://github.com/saltstack/salt/issues/35251
 1335928,72042031,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -19761,7 +19761,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/10025
+}",1.0,Enough criterias for standard,https://github.com/pandas-dev/pandas/issues/10025
 1259216,22407807,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=24&per_page=100"",
     ""page"": 24,
@@ -19967,7 +19967,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/8386
+}",0.0,Not Enough criterias for standard,https://github.com/saltstack/salt/issues/8386
 1338971,548520159,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -20113,7 +20113,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/30937
+}",0.0,Not Enough criterias for standard,https://github.com/pandas-dev/pandas/pull/30937
 1341790,478936404,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -20223,7 +20223,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/14241
+}",0.0,Not Enough criterias for standard,https://github.com/numpy/numpy/pull/14241
 1345368,7723961,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

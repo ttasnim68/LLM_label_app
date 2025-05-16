@@ -6069,7 +6069,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",0.0,Pulll request without enough information.,https://github.com/numpy/numpy/pull/12439
+}",0.0,Pull request without enough information.,https://github.com/numpy/numpy/pull/12439
 1257640,156384658,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=9&per_page=100"",
     ""page"": 9,
@@ -6262,7 +6262,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/33458
+}",1.0,bug report with enough criterias for standard.,https://github.com/saltstack/salt/issues/33458
 1257013,341045395,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=2&per_page=100"",
     ""page"": 2,
@@ -6376,7 +6376,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/48575
+}",0.0,Pull request without enough information.,https://github.com/saltstack/salt/issues/48575
 1337469,13918878,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6497,7 +6497,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/3518
+}",0.0,bug report without enough information.,https://github.com/pandas-dev/pandas/issues/3518
 1346828,7731484,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6601,7 +6601,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/2455
+}",1.0,feature request with enough criterias for standard,https://github.com/numpy/numpy/issues/2455
 1259484,14156207,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=27&per_page=100"",
     ""page"": 27,
@@ -6715,7 +6715,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/4948
+}",0.0,Not enough information about the pull request,https://github.com/saltstack/salt/issues/4948
 1250195,184348127,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=30&per_page=100"",
     ""page"": 30,
@@ -6868,7 +6868,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/37128
+}",1.0,bug report with enough criteria even with short description,https://github.com/saltstack/salt/issues/37128
 1331915,796495335,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7014,7 +7014,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/39461
+}",0.0,Not enough information about the bug report,https://github.com/pandas-dev/pandas/pull/39461
 1256331,19583416,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=91&per_page=100"",
     ""page"": 91,
@@ -7141,7 +7141,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/7285
+}",0.0,Not enough information about the feature request,https://github.com/saltstack/salt/issues/7285
 1338267,4022114,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

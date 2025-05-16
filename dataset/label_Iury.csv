@@ -20327,7 +20327,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/807
+}",0.0,Not Enough criterias for standard,https://github.com/numpy/numpy/issues/807
 1346289,321374469,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -20450,7 +20450,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/11067
+}",0.0,Not Enough criterias for standard,https://github.com/numpy/numpy/pull/11067
 1253941,54614859,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=68&per_page=100"",
     ""page"": 68,

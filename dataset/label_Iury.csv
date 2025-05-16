@@ -7321,7 +7321,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/1013
+}",1.0,Although not the best description it is enough to solve the problem,https://github.com/pandas-dev/pandas/issues/1013
 1343445,121802272,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -7457,7 +7457,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/6822
+}",0.0,Not enough information,https://github.com/numpy/numpy/pull/6822
 1256014,23168070,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=88&per_page=100"",
     ""page"": 88,
@@ -7584,7 +7584,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/8759
+}",1.0,bug report with enough criteria even with mess description,https://github.com/saltstack/salt/issues/8759
 1336211,49740597,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7750,7 +7750,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/8874
+}",0.0,bug report without enough information.,https://github.com/pandas-dev/pandas/issues/8874
 1332494,664617406,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

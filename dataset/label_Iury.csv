@@ -7841,7 +7841,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/35395
+}",1.0,bug report with barely enough information,https://github.com/pandas-dev/pandas/issues/35395
 1249337,249368038,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=22&per_page=100"",
     ""page"": 22,
@@ -8007,7 +8007,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/42843
+}",1.0,bug report with enough criteria for standard,https://github.com/saltstack/salt/issues/42843
 1336177,51042657,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8160,7 +8160,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/9005
+}",1.0,Bug report with enough criteria for standard,https://github.com/pandas-dev/pandas/issues/9005
 1333428,408024074,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8306,7 +8306,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/25224
+}",0.0,Pull feature request with enough criterias for standard,https://github.com/pandas-dev/pandas/pull/25224
 1343712,33822439,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -8410,7 +8410,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/4726
+}",0.0,Not enough information,https://github.com/numpy/numpy/issues/4726
 1340577,4117305,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8537,7 +8537,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/1052
+}",0.0,Not enough information for the feature request.,https://github.com/pandas-dev/pandas/issues/1052
 1341410,665835701,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

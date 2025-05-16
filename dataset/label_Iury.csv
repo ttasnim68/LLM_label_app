@@ -4560,7 +4560,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/47203
+}",1.0,bug report with good criterias for standard.,https://github.com/saltstack/salt/issues/47203
 1249096,277630050,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=19&per_page=100"",
     ""page"": 19,
@@ -4700,7 +4700,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/44727
+}",0.0,Not enough criteria to be considered standard.,https://github.com/saltstack/salt/issues/44727
 1257205,247080332,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=4&per_page=100"",
     ""page"": 4,
@@ -4814,7 +4814,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/42665
+}",1.0,bug report with good criterias for standard.,https://github.com/saltstack/salt/issues/42665
 1249885,203997101,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=27&per_page=100"",
     ""page"": 27,

@@ -5020,7 +5020,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/39021
+}",1.0,bug report with good criterias for standard.,https://github.com/saltstack/salt/issues/39021
 1339824,40247707,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -5160,7 +5160,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/8028
+}",1.0,feature request with clear criteria,https://github.com/pandas-dev/pandas/issues/8028
 1339607,127782854,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

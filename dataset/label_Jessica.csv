@@ -190,7 +190,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",1.0,"It is missing the version, but it contains most of main ",https://github.com/saltstack/salt/issues/26332
+}",,,https://github.com/saltstack/salt/issues/26332
 1247894,607133155,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=7&per_page=100"",
     ""page"": 7,

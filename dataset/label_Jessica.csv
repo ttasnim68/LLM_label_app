@@ -8256,7 +8256,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/34863
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/34863
 1249767,212237221,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=26&per_page=100"",
     ""page"": 26,
@@ -8435,7 +8435,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/39859
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/39859
 1335049,166984800,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -8594,7 +8594,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/13750
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/pull/13750
 1256119,22089320,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=89&per_page=100"",
     ""page"": 89,
@@ -8721,7 +8721,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/8259
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/8259
 1339157,364137189,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9028,7 +9028,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/59880
+}",1.0,"It contains some of key values, but it seems enough",https://github.com/saltstack/salt/issues/59880
 1334171,275795079,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9221,7 +9221,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/18414
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/18414
 1337130,24256737,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9325,7 +9325,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/5693
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/5693
 1248744,321791612,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=16&per_page=100"",
     ""page"": 16,
@@ -9478,7 +9478,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/47582
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/47582
 1333669,361496335,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9595,7 +9595,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/22753
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/22753
 1344104,7731372,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -9735,7 +9735,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/2381
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/2381
 1338542,989769294,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -9839,7 +9839,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/43438
+}",0.0,only complaining that they closed another issue,https://github.com/pandas-dev/pandas/issues/43438
 1259485,14140081,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=27&per_page=100"",
     ""page"": 27,
@@ -10119,7 +10119,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/10722
+}",0.0,we need to access external URL in order to understand the issue.,https://github.com/saltstack/salt/issues/10722
 1254554,45333179,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=74&per_page=100"",
     ""page"": 74,
@@ -10285,7 +10285,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/16504
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/16504
 1335180,155493580,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -10444,7 +10444,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/13214
+}",0.0,PR missing clearly stated changes,https://github.com/pandas-dev/pandas/pull/13214
 1342049,406218424,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -10597,7 +10597,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/12927
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/12927
 1255010,37838498,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=78&per_page=100"",
     ""page"": 78,
@@ -10803,7 +10803,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/14220
+}",0.0,Single sentence.,https://github.com/saltstack/salt/issues/14220
 1258730,40978196,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=19&per_page=100"",
     ""page"": 19,
@@ -11074,7 +11074,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/11942
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/11942
 1346080,464872016,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",

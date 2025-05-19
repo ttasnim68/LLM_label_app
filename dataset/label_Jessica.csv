@@ -20732,7 +20732,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/32622
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/32622
 1342949,224717650,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -20849,7 +20849,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/9006
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/9006
 1339013,505858415,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -21032,7 +21032,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/28925
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/28925
 1251754,118830892,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=46&per_page=100"",
     ""page"": 46,
@@ -21211,7 +21211,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/29186
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/29186
 1247453,737362568,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=3&per_page=100"",
     ""page"": 3,
@@ -21289,7 +21289,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/58892
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/58892
 1331945,789380958,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -21435,7 +21435,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/39280
+}",0.0,not enough information,https://github.com/pandas-dev/pandas/pull/39280
 1342884,235241449,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -21545,7 +21545,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/9247
+}",0.0,PR with only the description and redirecting to a ticket number,https://github.com/numpy/numpy/pull/9247
 1332593,638225475,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -21704,7 +21704,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/34756
+}",0.0,not enough information,https://github.com/pandas-dev/pandas/pull/34756
 1339310,282335875,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -21844,7 +21844,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/18789
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/18789
 1343207,169207578,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -21954,7 +21954,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/7894
+}",0.0,not enough information,https://github.com/numpy/numpy/pull/7894
 1252337,105192450,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=52&per_page=100"",
     ""page"": 52,

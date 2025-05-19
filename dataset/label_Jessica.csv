@@ -11350,7 +11350,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/893
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/893
 1343383,130178838,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -11600,7 +11600,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/293
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/293
 1337714,9551516,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -11727,7 +11727,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/2605
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/2605
 1336929,28814222,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

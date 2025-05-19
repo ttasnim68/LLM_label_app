@@ -6412,7 +6412,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/491
+}",1.0,"Title, code snippet and output",https://github.com/pandas-dev/pandas/issues/491
 1338444,2343842,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -6552,7 +6552,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/412
+}",0.0,only a sentence,https://github.com/pandas-dev/pandas/issues/412
 1256582,16241598,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=94&per_page=100"",
     ""page"": 94,
@@ -6757,7 +6757,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/7752
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/7752
 1344574,7728759,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6874,7 +6874,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/1796
+}",1.0,It contains most of key values,https://github.com/numpy/numpy/issues/1796
 1343498,116922445,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -6984,7 +6984,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/6686
+}",0.0,Missing most key values,https://github.com/numpy/numpy/pull/6686
 1248204,439297673,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=10&per_page=100"",
     ""page"": 10,
@@ -7124,7 +7124,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/52782
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/52782
 1250873,154749395,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=37&per_page=100"",
     ""page"": 37,
@@ -7267,7 +7267,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/33243
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/33243
 1250034,194457203,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=29&per_page=100"",
     ""page"": 29,
@@ -7433,7 +7433,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/38171
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/38171
 1258698,42577522,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=19&per_page=100"",
     ""page"": 19,
@@ -7560,7 +7560,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/15724
+}",1.0,It contains most of key values,https://github.com/saltstack/salt/issues/15724
 1339819,42080070,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7700,7 +7700,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/8190
+}",0.0,missing most key values,https://github.com/pandas-dev/pandas/issues/8190
 1337428,14668931,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -7821,7 +7821,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/issues/3687
+}",1.0,It contains most of key values,https://github.com/pandas-dev/pandas/issues/3687
 1335374,137630532,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

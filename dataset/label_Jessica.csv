@@ -4264,7 +4264,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/30151
+}",0.0,,https://github.com/saltstack/salt/issues/30151
 1249962,198760058,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=28&per_page=100"",
     ""page"": 28,
@@ -6666,7 +6666,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/5867
+}",0.0,"No description, only some pasted error",https://github.com/saltstack/salt/issues/5867
 1343235,160728053,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -9966,7 +9966,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/4945
+}",1.0,"It contains a clear title, descriptive and code example ",https://github.com/saltstack/salt/issues/4945
 1259028,28226280,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Feature&page=22&per_page=100"",
     ""page"": 22,
@@ -12313,7 +12313,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/issues/1528
+}",1.0,I think it has a good description and provides some example of what should be updated,https://github.com/numpy/numpy/issues/1528
 1336282,47098537,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -12785,7 +12785,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/30538
+}",1.0,"descriptive title, error output and versions",https://github.com/saltstack/salt/issues/30538
 1337639,10680550,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",

@@ -17615,7 +17615,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/3713
+}",0.0,"it is in the middle, but missing more practical examples",https://github.com/saltstack/salt/issues/3713
 1250092,191995932,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=29&per_page=100"",
     ""page"": 29,
@@ -19721,7 +19721,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/38290
+}",1.0,it contains versions and the issue is well described,https://github.com/saltstack/salt/issues/38290
 1344515,7728954,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -20075,7 +20075,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/26631
+}",0.0,PR - vague,https://github.com/pandas-dev/pandas/pull/26631
 1251182,139029384,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=40&per_page=100"",
     ""page"": 40,
@@ -22505,7 +22505,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/13317
+}",0.0,vague feature request - missing most of key values,https://github.com/saltstack/salt/issues/13317
 1346049,508544255,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
@@ -23615,7 +23615,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/22204
+}",1.0,well described feature request ,https://github.com/saltstack/salt/issues/22204
 1255858,24996708,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=87&per_page=100"",
     ""page"": 87,
@@ -23883,7 +23883,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/6322
+}",0.0,Only description and it is vague,https://github.com/saltstack/salt/issues/6322
 1334320,252063813,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -24752,7 +24752,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/numpy/numpy/pull/15271
+}",1.0,the changes are stated in the description,https://github.com/numpy/numpy/pull/15271
 1255179,35138598,GITHUB,salt,"{
     ""url"": ""https://api.github.com/repos/SaltStack/salt/issues?project=salt&repos=saltstack&state=closed&labels=Bug&page=80&per_page=100"",
     ""page"": 80,
@@ -25532,7 +25532,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/12586
+}",0.0,description is vague and it does not present other attributes,https://github.com/saltstack/salt/issues/12586
 1340622,3683566,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -26308,7 +26308,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/saltstack/salt/issues/6292
+}",1.0,Problem is well described,https://github.com/saltstack/salt/issues/6292
 1333094,523817690,GITHUB,pandas,"{
     ""repository"": ""pandas-dev"",
     ""project"": ""pandas"",
@@ -26454,7 +26454,7 @@ auto_pk,id,its,project,control_info,body,extracted_body,label,reason,html_url
         }
     ],
     ""description"": []
-}",,,https://github.com/pandas-dev/pandas/pull/29657
+}",1.0,PR - problem is described,https://github.com/pandas-dev/pandas/pull/29657
 1341822,473576266,GITHUB,numpy,"{
     ""repository"": ""numpy"",
     ""project"": ""numpy"",
